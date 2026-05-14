@@ -7,9 +7,9 @@ This MATLAB project has two main files for running:
 
 - Moreover, the file config.m stores the parameters.
 
-## Governing functions
+## 1. Governing functions
 
-Our aim is to solve $\gamma$, $\omega$ under the Eulerian coordinates and the pathline $(r, \theta, z)$ under the Lagrangian coordinates. In this project, we only consider the case when $\gamma_0 = f\left(1 - 2r_0^2\right)$. Note that $S_* = \frac{1}{|f|}$.
+Our aim is to solve $\gamma$, $\omega$ under the Eulerian coordinates and the pathline $(r, \theta, z)$ under the Lagrangian coordinates. In this project, we only consider the case when $\gamma_0 = f\left(1 - \frac{2}{R^2}r_0^2\right)$. Note that $S_* = \frac{1}{|f|}$.
 
 As the paper states, the equation of the auxillary function $S(t)$ is governed by the following ODE:
 
@@ -53,3 +53,7 @@ $$
     \omega(r, t) &= \omega_0(r_0(r,t)) \frac{1 + {f} S}{\sqrt{\dot{S}}} \exp\left( -\frac{2 {f} S r^2}{\sqrt{\dot{S}} R^2} \right).
 \end{aligned}
 $$
+
+## 2. Numerical simulation
+
+
